@@ -2,7 +2,8 @@
 
 namespace Altkom.Merrid.ProjectX.Models
 {
-    public class Class1
+    public abstract class Base
     {
+
     }
 }
