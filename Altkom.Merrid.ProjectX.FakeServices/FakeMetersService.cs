@@ -10,6 +10,12 @@ namespace Altkom.Merrid.ProjectX.FakeServices
     {
         private IList<Meter> _meters = new List<Meter>();
 
+        // ctor
+        public FakeMetersService(Generator generator)
+        {
+            _meters = generator.Meters;
+        }
+
         public void Add(Meter meter)
         {
             _meters.Add(meter);
@@ -36,9 +42,9 @@ namespace Altkom.Merrid.ProjectX.FakeServices
             return _meters.SingleOrDefault(meter => meter.Id == id);
         }
 
-        public void Remove(Meter meter)
+        public void Remove(int id)
         {
-            _meters.Remove(meter);
+            _meters.Remove(Get(id));
         }
 
         public void Update(Meter meter)

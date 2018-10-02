@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.Models", "Altkom.Merrid.ProjectX.Models\Altkom.Merrid.ProjectX.Models.csproj", "{63F0379B-B3F3-4A24-A397-847EAFFB3691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.Models", "Altkom.Merrid.ProjectX.Models\Altkom.Merrid.ProjectX.Models.csproj", "{63F0379B-B3F3-4A24-A397-847EAFFB3691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.IServices", "Altkom.Merrid.ProjectX.IServices\Altkom.Merrid.ProjectX.IServices.csproj", "{1BFB1C36-9673-4260-9A18-1A9106A6A24C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.IServices", "Altkom.Merrid.ProjectX.IServices\Altkom.Merrid.ProjectX.IServices.csproj", "{1BFB1C36-9673-4260-9A18-1A9106A6A24C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.FakeServices", "Altkom.Merrid.ProjectX.FakeServices\Altkom.Merrid.ProjectX.FakeServices.csproj", "{2E58BB1B-AE0D-4B7A-A193-3329CFE4E3EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.FakeServices", "Altkom.Merrid.ProjectX.FakeServices\Altkom.Merrid.ProjectX.FakeServices.csproj", "{2E58BB1B-AE0D-4B7A-A193-3329CFE4E3EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.ConsoleClient", "Altkom.Merrid.ProjectX.ConsoleClient\Altkom.Merrid.ProjectX.ConsoleClient.csproj", "{3F52CF07-50AC-4507-A542-578A29B3A569}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.ConsoleClient", "Altkom.Merrid.ProjectX.ConsoleClient\Altkom.Merrid.ProjectX.ConsoleClient.csproj", "{3F52CF07-50AC-4507-A542-578A29B3A569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.WebApiService", "Altkom.Merrid.ProjectX.WebApiService\Altkom.Merrid.ProjectX.WebApiService.csproj", "{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3F52CF07-50AC-4507-A542-578A29B3A569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F52CF07-50AC-4507-A542-578A29B3A569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F52CF07-50AC-4507-A542-578A29B3A569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

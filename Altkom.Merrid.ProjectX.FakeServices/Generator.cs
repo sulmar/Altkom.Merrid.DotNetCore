@@ -10,7 +10,7 @@ namespace Altkom.Merrid.ProjectX.FakeServices
 
     public class Generator
     {
-        public static Faker<Meter> Meters => new Faker<Meter>()
+        private Faker<Meter> FakeMeters => new Faker<Meter>()
             .StrictMode(true)
             .RuleFor(p => p.Id, f => f.IndexFaker)
             .RuleFor(p => p.Name, f => f.Name.FirstName())
@@ -20,7 +20,25 @@ namespace Altkom.Merrid.ProjectX.FakeServices
             .FinishWith((f, meter) => Console.WriteLine($"Meter {meter.Address} was created."))
             ;
 
+        private Faker<Measure> FakeMeasures => new Faker<Measure>()
+            .StrictMode(true)
+            .RuleFor(p => p.Id, f=>f.IndexFaker)
+            .RuleFor(p => p.Meter, f => f.PickRandom(Meters))
+            .RuleFor(p => p.Unit, f => new Unit { Id = 1, Name = "Celsius" })
+            // .Ignore(p => p.MeasureDate)
+            .RuleFor(p => p.MeasureDate, f => f.Date.Past(1))
+            .RuleFor(p=>p.Value, f=>f.Random.Float(0, 100))
+            .FinishWith((f, measure) => Console.WriteLine($"Masure {measure.MeasureDate} {measure.Value}"))
+            ;
 
-        public static IList<Meter> GenerateMeters(int count) => Meters.Generate(count);
+        public IList<Meter> Meters { get; private set; }
+        public IList<Measure> Measures { get; private set; }
+
+        public Generator()
+        {
+            Meters = FakeMeters.Generate(1000);
+            Measures = FakeMeasures.Generate(1000);
+        }
+
     }
 }
