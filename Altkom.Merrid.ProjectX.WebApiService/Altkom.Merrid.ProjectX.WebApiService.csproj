@@ -11,9 +11,11 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Altkom.Merrid.ProjectX.DbServices\Altkom.Merrid.ProjectX.DbServices.csproj" />
     <ProjectReference Include="..\Altkom.Merrid.ProjectX.FakeServices\Altkom.Merrid.ProjectX.FakeServices.csproj" />
     <ProjectReference Include="..\Altkom.Merrid.ProjectX.IServices\Altkom.Merrid.ProjectX.IServices.csproj" />
   </ItemGroup>

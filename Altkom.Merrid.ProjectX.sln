@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.Fake
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.ConsoleClient", "Altkom.Merrid.ProjectX.ConsoleClient\Altkom.Merrid.ProjectX.ConsoleClient.csproj", "{3F52CF07-50AC-4507-A542-578A29B3A569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.WebApiService", "Altkom.Merrid.ProjectX.WebApiService\Altkom.Merrid.ProjectX.WebApiService.csproj", "{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.WebApiService", "Altkom.Merrid.ProjectX.WebApiService\Altkom.Merrid.ProjectX.WebApiService.csproj", "{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.DbServices", "Altkom.Merrid.ProjectX.DbServices\Altkom.Merrid.ProjectX.DbServices.csproj", "{682BA979-0815-4A12-9407-B8F9473FEE69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682BA979-0815-4A12-9407-B8F9473FEE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682BA979-0815-4A12-9407-B8F9473FEE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682BA979-0815-4A12-9407-B8F9473FEE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682BA979-0815-4A12-9407-B8F9473FEE69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

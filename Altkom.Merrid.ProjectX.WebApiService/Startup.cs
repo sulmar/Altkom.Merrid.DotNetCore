@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Altkom.Merrid.ProjectX.DbServices;
 using Altkom.Merrid.ProjectX.FakeServices;
 using Altkom.Merrid.ProjectX.IServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -28,10 +30,12 @@ namespace Altkom.Merrid.ProjectX.WebApiService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<Generator, Generator>();
-            services.AddScoped<IMetersService, FakeMetersService>();
+            services.AddScoped<IMetersService, DbMetersServices>();
             services.AddScoped<IMeasuresService, FakeMeasuresService>();
-            
 
+            // PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer
+            services.AddDbContext<ProjectXContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("ProjectXConnection")));
 
             // PM> Install-Package Microsoft.AspNetCore.Mvc.Formatters.Xml
 
