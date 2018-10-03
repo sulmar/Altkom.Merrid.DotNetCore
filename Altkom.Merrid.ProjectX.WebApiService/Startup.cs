@@ -30,8 +30,8 @@ namespace Altkom.Merrid.ProjectX.WebApiService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<Generator, Generator>();
-            services.AddScoped<IMetersService, DbMetersServices>();
-            services.AddScoped<IMeasuresService, FakeMeasuresService>();
+            services.AddScoped<IMetersService, DbMetersService>();
+            services.AddScoped<IMeasuresService, DbMeasuresService>();
 
             // PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer
             services.AddDbContext<ProjectXContext>(options =>

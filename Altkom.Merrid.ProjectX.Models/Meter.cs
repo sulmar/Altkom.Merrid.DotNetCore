@@ -1,4 +1,7 @@
-﻿namespace Altkom.Merrid.ProjectX.Models
+﻿
+using System.Collections.Generic;
+
+namespace Altkom.Merrid.ProjectX.Models
 {
     public class Meter : Base
     {

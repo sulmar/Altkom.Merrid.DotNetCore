@@ -1,4 +1,5 @@
 ﻿using Altkom.Merrid.ProjectX.IServices;
+using Altkom.Merrid.ProjectX.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace Altkom.Merrid.ProjectX.WebApiService.Controllers
         public IActionResult Get() => Ok(_measuresService.Get());
 
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "GetMeasureLink")]
         public IActionResult Get(int id)
         {
             var measure = _measuresService.Get(id);
@@ -32,6 +33,15 @@ namespace Altkom.Merrid.ProjectX.WebApiService.Controllers
                 return NotFound();
 
             return Ok(measure);
+        }
+
+
+        [HttpPost]
+        public IActionResult Post(Measure measure)
+        {
+            _measuresService.Add(measure);
+
+            return CreatedAtRoute("GetMeasureLink", new { id = measure.Id }, measure);
         }
     }
 }

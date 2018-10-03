@@ -18,6 +18,7 @@ namespace Altkom.Merrid.ProjectX.DbServices.Configurations
                 .IsRequired()
                 .HasColumnName("Nazwa")
                 .HasMaxLength(50);
+
         }
     }
 }

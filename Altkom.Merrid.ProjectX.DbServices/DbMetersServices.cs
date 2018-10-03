@@ -8,11 +8,11 @@ using System.Text;
 
 namespace Altkom.Merrid.ProjectX.DbServices
 {
-    public class DbMetersServices : IMetersService
+    public class DbMetersService : IMetersService
     {
         private readonly ProjectXContext context;
 
-        public DbMetersServices(ProjectXContext context)
+        public DbMetersService(ProjectXContext context)
         {
             this.context = context;
         }

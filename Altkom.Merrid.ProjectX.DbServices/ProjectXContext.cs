@@ -6,6 +6,9 @@ using System;
 namespace Altkom.Merrid.ProjectX.DbServices
 {
     // PM> Install-Package Microsoft.EntityFrameworkCore
+
+    // Migracje:
+    // PM> Install-Package Microsoft.EntityFrameworkCore.Tools.DotNet
     public class ProjectXContext : DbContext
     {
         public DbSet<Meter> Meters { get; set; }
@@ -16,6 +19,7 @@ namespace Altkom.Merrid.ProjectX.DbServices
         public ProjectXContext(DbContextOptions<ProjectXContext> options)
             : base(options)
         {
+
             this.Database.EnsureCreated();
         }
 
