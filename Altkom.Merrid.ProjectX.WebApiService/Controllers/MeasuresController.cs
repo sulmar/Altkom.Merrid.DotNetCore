@@ -36,6 +36,14 @@ namespace Altkom.Merrid.ProjectX.WebApiService.Controllers
         }
 
 
+        [HttpGet("~/api/meters/{meterId}/measures")]
+        public IActionResult GetByMeter(int meterId)
+        {
+            var measures = _measuresService.GetByMeter(meterId);
+
+            return Ok(measures);
+        }
+
         [HttpPost]
         public IActionResult Post(Measure measure)
         {

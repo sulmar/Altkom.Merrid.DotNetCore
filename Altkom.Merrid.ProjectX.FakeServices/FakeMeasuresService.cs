@@ -20,5 +20,10 @@ namespace Altkom.Merrid.ProjectX.FakeServices
         {
             throw new NotImplementedException();
         }
+
+        public IList<Measure> GetByMeter(int meterId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

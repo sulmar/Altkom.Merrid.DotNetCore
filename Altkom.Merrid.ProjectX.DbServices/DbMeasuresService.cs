@@ -44,6 +44,11 @@ namespace Altkom.Merrid.ProjectX.DbServices
             throw new NotImplementedException();
         }
 
+        public IList<Measure> GetByMeter(int meterId)
+        {
+            return context.Measures.Where(m => m.Meter.Id == meterId).ToList();
+        }
+
         public void Remove(int id)
         {
             throw new NotImplementedException();

@@ -28,6 +28,7 @@ namespace Altkom.Merrid.ProjectX.IServices
     public interface IMeasuresService : IEntitiesService<Measure>
     {
         IList<Measure> Get(DateTime begin, DateTime end);
+        IList<Measure> GetByMeter(int meterId);
     }
 
     public interface IEntitiesService<TEntity>

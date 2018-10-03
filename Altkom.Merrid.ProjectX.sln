@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.Cons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.WebApiService", "Altkom.Merrid.ProjectX.WebApiService\Altkom.Merrid.ProjectX.WebApiService.csproj", "{A18FD7E4-8A22-41AA-8F0E-49E37746A79D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.DbServices", "Altkom.Merrid.ProjectX.DbServices\Altkom.Merrid.ProjectX.DbServices.csproj", "{682BA979-0815-4A12-9407-B8F9473FEE69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.DbServices", "Altkom.Merrid.ProjectX.DbServices\Altkom.Merrid.ProjectX.DbServices.csproj", "{682BA979-0815-4A12-9407-B8F9473FEE69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.HubService", "Altkom.Merrid.ProjectX.HubService\Altkom.Merrid.ProjectX.HubService.csproj", "{85CE4807-744D-41F4-BA8F-592DD3BB2F32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altkom.Merrid.ProjectX.Sensor", "Altkom.Merrid.ProjectX.Sensor\Altkom.Merrid.ProjectX.Sensor.csproj", "{EDFDCDD4-F386-4C64-9A33-086E87799CFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altkom.Merrid.ProjectX.SensorClient", "Altkom.Merrid.ProjectX.SensorClient\Altkom.Merrid.ProjectX.SensorClient.csproj", "{AD50ED61-500B-432A-8965-34DD890224FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{682BA979-0815-4A12-9407-B8F9473FEE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{682BA979-0815-4A12-9407-B8F9473FEE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{682BA979-0815-4A12-9407-B8F9473FEE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85CE4807-744D-41F4-BA8F-592DD3BB2F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85CE4807-744D-41F4-BA8F-592DD3BB2F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85CE4807-744D-41F4-BA8F-592DD3BB2F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85CE4807-744D-41F4-BA8F-592DD3BB2F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDFDCDD4-F386-4C64-9A33-086E87799CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFDCDD4-F386-4C64-9A33-086E87799CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFDCDD4-F386-4C64-9A33-086E87799CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFDCDD4-F386-4C64-9A33-086E87799CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD50ED61-500B-432A-8965-34DD890224FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD50ED61-500B-432A-8965-34DD890224FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD50ED61-500B-432A-8965-34DD890224FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD50ED61-500B-432A-8965-34DD890224FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
